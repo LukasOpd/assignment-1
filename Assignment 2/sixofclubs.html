@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <style>
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .container{
+                width: 200px;
+                height: 300px;
+                border: black solid 2px;
+                border-radius: 5%;
+                padding: 10px;
+            }
+            .card{
+                font-size: 25px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 40px auto 40px;
+                height: 100%;
+            }
+            .right{
+                transform: rotate(180deg);
+                font-size: 30px;
+            }
+            .left{
+                font-size: 30px;
+            }
+            .middle{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                font-size: 65px;
+            }
+            .middle div:last-child{
+                transform: rotateX(180deg);
+                margin-top: 20px;
+            }
+            .middle div:nth-last-of-type(2){
+                transform: rotateX(180deg);
+                margin-top: 20px;
+            }
+            /* .middle :nth-child(even){  Dytter annenhver middle "club" litt til høyre for å lage mellomrommet mellom middle elementene 
+                margin-left: 20px; 
+            } */
+             /* Ok så denne erstatter den over med nth-child(even), men er litt usikker på hva som er best */
+            .middle{
+                margin: auto;
+                column-gap: 40px;
+                row-gap: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="left">
+                    <div>6</div>
+                    <div>&clubs;</div> 
+                </div>
+                <div class="middle">
+                    <div>&clubs;</div>
+                    <div>&clubs;</div>
+                    <div>&clubs;</div>
+                    <div>&clubs;</div>
+                    <div>&clubs;</div>
+                    <div>&clubs;</div>
+                </div>
+                <div class="right">
+                    <div>6</div>
+                    <div>&clubs;</div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>

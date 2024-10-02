@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <style>
+            body{
+                align-content: center;
+                text-align: center;
+            }
+            .wrapper{
+                width: 80%;
+                margin: auto;
+            }
+            div{
+                height: 20px;
+                width: 100%;
+                background-color: gray;
+                border-radius: 20px;
+                margin-top: 20px;
+            }
+            .progressbar{
+                height: 10%;
+            }
+            .thirty{
+                background-color: red;
+                width: 33%;
+            }
+            .sixty{
+                background-color: yellow;
+                width:67%;
+            }
+            .hundred{
+                background-color: green;
+            }
+            .overlap{
+                position: relative;
+                bottom: 40px;
+            }
+            .activator:hover .interactive{ /* When hovering the activator, the interactive one gets the following properties*/
+                animation-name: progress;
+                animation-duration: 4s;
+                animation-timing-function: linear;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+            @keyframes progress{
+                0%{
+                    background-color: gray;
+                    width: 0%;
+                }
+                33%{
+                    background-color: red;
+                    width: 33%;
+                }
+                67%{
+                    background-color: yellow;
+                    width: 67%;
+                }
+                100%{
+                    background-color: green;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="wrapper">
+            <h2>Not-interactive</h2>
+            <section class="progressbar">
+                <div></div>
+            </section>
+            <section class="progressbar">
+                <div></div>
+                <div class="overlap thirty"></div>
+            </section>
+            <section class="progressbar">
+                <div></div>
+                <div class="overlap sixty"></div>
+            </section>
+            <section class="progressbar">
+                <div></div>
+                <div class="overlap hundred"></div>
+            </section>
+            <h2>Interactive</h2>
+            <section class="progressbar activator">
+                <div></div>
+                <div class="overlap interactive"></div>
+            </section>
+        </section>
+    </body>
+</html>

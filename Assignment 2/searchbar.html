@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+            .container{
+                padding: 30px;
+                width: 50%;
+            }
+            .search-bar{
+                outline: none; /* Denne fjerner den automatisk sorte kanten og gjør at vi kan få riktige farger på border */
+                background-color: aliceblue;
+                width: 33%; /* Sier at selve search-bar skal være 33% av container, som igjen er 50% av body width */
+                height: 50px;
+                border: 1.5px red solid;
+                border-radius: 10px;
+            }
+            .search-bar:focus{
+                width: 100%;
+                border-color: blue;
+                /* border-radius: 0; -> Denne er bare smak og behag */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <input type="search" 
+                class="search-bar" 
+                id="search-field"
+                placeholder="Search..."/>
+        </div>
+    </body>
+</html>

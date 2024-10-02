@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <style>
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .container{
+                width: 200px;
+                height: 300px;
+                border: black solid 2px;
+                border-radius: 5%;
+                padding: 10px;
+            }
+            .card{
+                font-size: 20px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                height: 100%;
+            }
+            .center{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 100px;
+            }
+            .bottom{
+                transform: rotate(180deg);
+            }
+            .top div:last-child{
+                font-size: 30px;
+            }
+            .bottom div:last-child{
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="top">
+                    <div>A</div>
+                    <div>&spades;</div> 
+                </div>
+                <div class="center">&spades;</div>
+                <div class="bottom">
+                    <div>A</div>
+                    <div>&spades;</div>
+                </div>
+            </div>
+        </div>
+    </body>  
+</html>
