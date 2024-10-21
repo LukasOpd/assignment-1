@@ -7,26 +7,33 @@
     <style>
 
 
+        #allcontent{
+            background-color: rgb(238, 238, 181);
+        }
         #imgwebsite{
             text-align: center;
         }
         #formtitle{
             padding: 10px;
             border: solid ;
-
+            margin: 40px;
+            background-color: beige;
+            
         }
 
 
 
         #questions{
             border: solid;
+            margin: 40px;
+            background-color: beige;
       
             
         }
         .individualquestions{
-            border: solid;
+     
             padding: 2px;
-            margin: 2px;
+            margin: 15px;
             background-color: beige;
         }
         #otherinformation{
@@ -38,16 +45,17 @@
 
 </head>
 <body>
+    <div id="allcontent">
     <div>
         <header>
             <h1 id="imgwebsite">An imaginary website</h1>
-            <h2 id="formtitle">Required information:</h2>
+            <h2 id="formtitle">Please fill out this form:</h2>
         </header>
     </div>
     <div id="questions" >
         <form action="">
-        <div class="individualquestions">First and last name: <div><input type="text" name="" id="fullname" required></div></div>
-        <div class="individualquestions">Email: <div><input type="email" name="" id="email" required></div></div>
+        <div class="individualquestions">First and last name: <input type="text" name="" id="fullname" required></div>
+        <div class="individualquestions">Email: <input type="email" name="" id="email" required></div>
         <div class="individualquestions">Password: <input type="password" name="" id="password" minlength="8" required></div>
         <div class="individualquestions">Phone number: (<input type="tel" required name="phone" id="phone" required placeholder="123" size="3" maxlength="3" pattern="[0-9]{3}">)
             <input type="tel" name="phone2" id="phone2" required placeholder="456" size="3" maxlength="3" pattern="[0-9]{3}"> -
@@ -100,6 +108,7 @@
             <input type="submit" >
         </form>
     </div>
+</div>
 
 </body>
 </html>
