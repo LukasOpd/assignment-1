@@ -47,9 +47,9 @@
         <div class="individualquestions">First and last name: <div><input type="text" name="" id="fullname"></div></div>
         <div class="individualquestions">Email: <div><input type="email" name="" id="email"></div></div>
         <div class="individualquestions">Password: <input type="password" name="" id="password"></div>
-        <div class="individualquestions">Phone number: (<input type="tel" name="phone" id="phone" required placeholder="123" size="1" maxlength="3" pattern="[0-9]{3}">)
-            <input type="tel" name="phone2" id="phone2" required placeholder="456" size="1" maxlength="3" pattern="[0-9]{3}"> -
-            <input type="tel" name="phone3" id="phone3" required placeholder="7890" size="2" maxlength="4" pattern="[0-9]{4}"></div>
+        <div class="individualquestions">Phone number: (<input type="tel" name="phone" id="phone" required placeholder="123" size="3" maxlength="3" pattern="[0-9]{3}">)
+            <input type="tel" name="phone2" id="phone2" required placeholder="456" size="3" maxlength="3" pattern="[0-9]{3}"> -
+            <input type="tel" name="phone3" id="phone3" required placeholder="7890" size="4" maxlength="4" pattern="[0-9]{4}"></div>
         <div class="individualquestions">Date of birth: <input type="date" max="2006-10-21"></div>
         <div class="individualquestions">Country: <select name="" id="">
             <option value="brazil">Brazil</option>
@@ -84,13 +84,20 @@
             <input type="text" name="otherinformation" id="otherinformation">
         </div>
 
-        <div><input type="range" name="howsatisfied" id="" min="0" max="10"></div>
+        <div class="individualquestions">How satisfied are you with our services? <br>
+            <input type="range" name="howsatisfied" id="" min="0" max="10" ></div>
 
 
         </form>
-        </div></div>
+        <div class="individualquestions">Upload picture of yourself: <br>
+            <input type="file">
+        </div>
+        </div>
 
-        <input type="submit">
+        </div >
+
+        <input type="reset" name="" id="">
+        <input type="submit" >
         </form>
     </div>
 
