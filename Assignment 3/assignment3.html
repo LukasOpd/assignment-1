@@ -19,12 +19,17 @@
 
 
         #questions{
+            border: solid;
             
         }
         .individualquestions{
             border: solid;
             padding: 2px;
             margin: 2px;
+        }
+        #otherinformation{
+            height: 200px;
+            width: 200px;
         }
     </style>
 
@@ -37,11 +42,54 @@
             <h2 id="formtitle">Required information:</h2>
         </header>
     </div>
-    <div id="questions">
+    <div id="questions" >
+        <form action="">
         <div class="individualquestions">First and last name: <div><input type="text" name="" id="fullname"></div></div>
         <div class="individualquestions">Email: <div><input type="email" name="" id="email"></div></div>
-        <div class="individualquestions">Password: <div><input type="password" name="" id="password">
+        <div class="individualquestions">Password: <input type="password" name="" id="password"></div>
+        <div class="individualquestions">Phone number: <input type="tel"></div>
+        <div class="individualquestions">Date of birth: <input type="date" max="2006-10-21"></div>
+        <div class="individualquestions">Country: <select name="" id="">
+            <option value="brazil">Brazil</option>
+            <option value="uk">Uk</option>
+            <option value="germany">Germany</option>
+            <option value="norway">Norway</option>
+            <option value="usa">USA</option>
+            <option value="sweden">Sweden</option>
+        
+        
+        </select></div>
+        <form action="">
+        <div class="individualquestions">Gender: <br>
+            Male:<input type="radio" name="gender" id="Male"> <br>
+            Female: <input type="radio" name="gender" id="Female"><br>
+            Other: <input type="radio" name="gender" id="Other">
+
+        </div>
+
+        <form action=""><div class="individualquestions">
+            Interests: <br>
+            Football: <input type="checkbox" name="interests" id="football"><br>
+            Quidditch: <input type="checkbox" name="interests" id="quidditch"><br>
+            Swimming: <input type="checkbox" name="interests" id="swimming"><br>
+            Hobby Horsing: <input type="checkbox" name="interests" id="hobbyhorsing"><br>
+            Frisbee Golf: <input type="checkbox" name="interests" id="frisbeegolf"><br>
+        </div></form>
+
+        <div>
+
+            Other information that may be useful for us to know: <br>
+            <input type="text" name="otherinformation" id="otherinformation">
+        </div>
+
+        <div><input type="range" name="howsatisfied" id="" min="0" max="10"></div>
+
+
+        </form>
         </div></div>
+
+        <input type="submit">
+        </form>
     </div>
 
 </body>
