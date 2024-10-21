@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.intro {
+  text-align: center;
+  padding: 40px;
+  background: #f4f4f4;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.feature-item {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  width: 30%;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+}
+img{
+  width: 100%;
+}
+
+@media screen and (max-width: 1280px){
+  body{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 960px){
+  body{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 600px){
+  body{
+    font-size: 13px;
+  }
+  .features{
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-item{
+    display: flex;
+    height: 100px;
+    width: 90%;
+    align-items: center;
+  }
+  img{
+    width: 20%;
+  }
+  h3{
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 30px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px){
+  body{
+    font-size: 12px;
+  }
+  h3{
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 360px){
+  body{
+    font-size: 11px;
+  }
+  h3{
+    font-size: 12px;
+  }
+}
+
+</style>
+
+</head>
+<body>
+  <header>
+    <h1>Responsive Website Design</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <h2>Welcome to our site</h2>
+      <p>This is a demonstration of a responsive website using HTML5 and CSS3.</p>
+    </section>
+    <section class="features">
+      <div class="feature-item">
+        <img src="oven.jpg" alt="kitchen oven">
+        <h3>Ovens</h3>
+        <p>We install the best kitchen ovens for the cheapest price. Consecutive award winners of best ovens since 2019.</p>
+      </div>
+      <div class="feature-item">
+        <img src="fridge.jpg" alt="integrated fridge">
+        <h3>Integrated fridges</h3>
+        <p>We can install integrated fridges in any type of kitchen.</p>
+      </div>
+      <div class="feature-item">
+        <img src="quartztop.png" alt="quartz kitchen top">
+        <h3>Quartz countertops</h3>
+        <p>We deliver the highest quality quartz countertops for the cheapest price in Trondheim.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Responsive Website</p>
+  </footer>
+</body>
+</html>
