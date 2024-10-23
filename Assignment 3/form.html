@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: rgb(47, 47, 152);
+        }
+        #allcontent{
+            width: 50%;
+            text-align: center;
+            margin: auto;
+        }
+        #imgwebsite{
+            text-align: center;
+        }
+        #formtitle{
+            padding: 10px;
+            border: solid ;
+            margin: 40px;
+            background-color: rgb(108, 108, 238);
+        }
+        #questions{
+            border: solid;
+            margin: 40px;
+            background-color: rgb(108, 108, 238);   
+        }
+        .individualquestions{
+     
+            padding: 2px;
+            margin: 15px;
+            background-color: rgb(108, 108, 238);
+        }
+        #otherinformation{
+
+            width: 250px;
+        }
+        #submite{
+            margin: 40px;
+        }
+        #reset{
+            margin: 40px;
+            align-items: center;
+        }
+        @media screen and (max-width: 1280px) {
+            body{
+                font-size: 15px;
+            }   
+        }
+        @media screen and (max-width: 960px){
+            body{
+                font-size: 13px;
+            }
+        }
+        @media screen and (max-width: 600px){
+            body{
+                font-size: 12px;
+            }
+        }
+        @media screen and (max-width: 500px){
+            body{
+                font-size: 12px;
+            }
+        }
+        @media screen and (max-width: 360px){
+        body{
+            font-size: 11px;
+     }
+}
+    </style>
+
+
+</head>
+<body>
+    <div id="allcontent">
+    <div>
+        <header>
+            <h1 id="imgwebsite">An imaginary website</h1>
+            <h2 id="formtitle">Please fill out this form:</h2>
+        </header>
+    </div>
+    <div id="questions" >
+        <form action="">
+        <div class="individualquestions">First and last name: <input type="text" name="" id="fullname" required></div>
+        <div class="individualquestions">Email: <input type="email" name="" id="email" required></div>
+        <div class="individualquestions">Password: <input type="password" name="" id="password" minlength="8" required></div>
+        <div class="individualquestions">Phone number: (<input type="tel" required name="phone" id="phone" required placeholder="123" size="3" maxlength="3" pattern="[0-9]{3}">)
+            <input type="tel" name="phone2" id="phone2" required placeholder="456" size="3" maxlength="3" pattern="[0-9]{3}"> -
+            <input type="tel" name="phone3" id="phone3" required placeholder="7890" size="4" maxlength="4" pattern="[0-9]{4}"></div>
+        <div class="individualquestions">Date of birth: <input type="date" max="2006-10-21"></div>
+        <div class="individualquestions">Country: <select name="" id="">
+            <option value="brazil">Brazil</option>
+            <option value="uk">Uk</option>
+            <option value="germany">Germany</option>
+            <option value="norway">Norway</option>
+            <option value="usa">USA</option>
+            <option value="sweden">Sweden</option>
+        
+        
+        </select></div>
+        <div class="individualquestions">Gender: <br>
+            Male:<input type="radio" name="gender" id="Male"> <br>
+            Female: <input type="radio" name="gender" id="Female"><br>
+            Other: <input type="radio" name="gender" id="Other">
+
+        </div>
+
+        <div class="individualquestions">
+            Interests: <br>
+            Football: <input type="checkbox" name="interests" id="football"><br>
+            Quidditch: <input type="checkbox" name="interests" id="quidditch"><br>
+            Swimming: <input type="checkbox" name="interests" id="swimming"><br>
+            Hobby Horsing: <input type="checkbox" name="interests" id="hobbyhorsing"><br>
+            Frisbee Golf: <input type="checkbox" name="interests" id="frisbeegolf"><br>
+        </div>
+
+        <div class="individualquestions">
+
+            Other information that may be useful for us to know: <br>
+            <textarea name="" id=""></textarea>
+        </div>
+
+        <div class="individualquestions">How satisfied are you with our services? <br>
+            <input type="range" name="howsatisfied" id="" min="0" max="10" ></div>
+
+
+            <div class="individualquestions">Upload picture of yourself: <br>
+                <input type="file">
+            </div>
+            </div>
+    
+ 
+    
+            <input type="reset" name="" id="reset">
+            <input type="submit" id="submite">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

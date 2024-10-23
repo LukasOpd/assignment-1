@@ -6,9 +6,13 @@
     <title>Document</title>
     <style>
 
-
-        #allcontent{
+        body{
             background-color: rgb(47, 47, 152);
+        }
+        #allcontent{
+            width: 50%;
+            text-align: center;
+            margin: auto;
         }
         #imgwebsite{
             text-align: center;
@@ -18,17 +22,11 @@
             border: solid ;
             margin: 40px;
             background-color: rgb(108, 108, 238);
-            
         }
-
-
-
         #questions{
             border: solid;
             margin: 40px;
-            background-color: rgb(108, 108, 238);
-      
-            
+            background-color: rgb(108, 108, 238);   
         }
         .individualquestions{
      
@@ -86,10 +84,10 @@
     </div>
     <div id="questions" >
         <form action="">
-        <div class="individualquestions">First and last name: <input type="text" name="" id="fullname" required></div>
-        <div class="individualquestions">Email: <input type="email" name="" id="email" required></div>
-        <div class="individualquestions">Password: <input type="password" name="" id="password" minlength="8" required></div>
-        <div class="individualquestions">Phone number: (<input type="tel" required name="phone" id="phone" required placeholder="123" size="3" maxlength="3" pattern="[0-9]{3}">)
+        <div class="individualquestions">First and last name <br><br><input type="text" name="" id="fullname" required></div>
+        <br><div class="individualquestions">Email <br><br><input type="email" name="" id="email" required></div>
+        <br><div class="individualquestions">Password <br><br><input type="password" name="" id="password" minlength="8" required></div>
+        <br><div class="individualquestions">Phone number <br><br>(<input type="tel" required name="phone" id="phone" required placeholder="123" size="3" maxlength="3" pattern="[0-9]{3}">)
             <input type="tel" name="phone2" id="phone2" required placeholder="456" size="3" maxlength="3" pattern="[0-9]{3}"> -
             <input type="tel" name="phone3" id="phone3" required placeholder="7890" size="4" maxlength="4" pattern="[0-9]{4}"></div>
         <div class="individualquestions">Date of birth: <input type="date" max="2006-10-21"></div>
