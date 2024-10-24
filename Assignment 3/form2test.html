@@ -7,7 +7,7 @@
     <style>
 
         body{
-            background-color: rgb(47, 47, 152);
+            background-color: antiquewhite;
         }
         #allcontent{
             width: 50%;
@@ -19,20 +19,20 @@
         }
         #formtitle{
             padding: 10px;
-            border: solid ;
             margin: 40px;
-            background-color: rgb(108, 108, 238);
         }
         #questions{
             border: solid;
-            margin: 40px;
-            background-color: rgb(108, 108, 238);   
+            border-radius: 50px;
+            margin: 40px;  
+            background-color: bisque;
         }
         .individualquestions{
-     
             padding: 2px;
             margin: 15px;
-            background-color: rgb(108, 108, 238);
+            font-weight: bold;
+            font-style: italic;
+            font-size: 18px;
         }
         #otherinformation{
 
@@ -44,6 +44,54 @@
         #reset{
             margin: 40px;
             align-items: center;
+        }
+        input{
+            outline: none;
+            border-radius: 5px;
+            border: 2px gray solid;
+            padding: 6px 10px;
+        }
+        input:focus{
+            border: 2px black solid;
+        }
+        select{
+            outline: none;
+            border-radius: 5px;
+            border: 2px gray solid;
+            padding: 6px 10px;
+        }
+        select:focus{
+            border: 2px black solid;
+        }
+        textarea{
+            outline: none;
+            border-radius: 5px;
+            border: 2px gray solid;
+            padding: 6px 10px;
+        }
+        textarea:focus{
+            border: 2px black solid;
+        }
+        input[type=reset], input[type=submit]{
+            font-size: 16px;
+            margin: 40px;
+        }
+        input[type=submit]{
+            background-color: lightgreen;
+            border: black 2px solid;
+        }
+        input[type=reset]{
+            background-color: lightsalmon;
+            border: black 2px solid;
+        }
+        input[type=reset]:hover, input[type=submit]:hover{
+            opacity: 80%;
+        }
+        input[type=range]{
+            margin: 10px;
+            padding:0;
+            box-sizing: border-box;
+            border: 0;
         }
         @media screen and (max-width: 1280px) {
             body{
@@ -79,19 +127,19 @@
     <div>
         <header>
             <h1 id="imgwebsite">An imaginary website</h1>
-            <h2 id="formtitle">Please fill out this form:</h2>
         </header>
     </div>
     <div id="questions" >
         <form action="">
-        <div class="individualquestions">First and last name <br><br><input type="text" name="" id="fullname" required></div>
-        <br><div class="individualquestions">Email <br><br><input type="email" name="" id="email" required></div>
-        <br><div class="individualquestions">Password <br><br><input type="password" name="" id="password" minlength="8" required></div>
-        <br><div class="individualquestions">Phone number <br><br>(<input type="tel" required name="phone" id="phone" required placeholder="123" size="3" maxlength="3" pattern="[0-9]{3}">)
+        <h2 id="formtitle">Survey Feedback Form</h2><br><br>
+        <div class="individualquestions">Full name <br><br><input type="text" name="fullname" id="fullname" required placeholder="John Peterson"></div>
+        <br><div class="individualquestions">Email <br><br><input type="email" name="email" id="email" required placeholder="example@gmail.com"></div>
+        <br><div class="individualquestions">Password <br><br><input type="password" name="password" id="password" minlength="8" required><br><label for="password" style="font-size: 13px; font-style: italic;">(password has to be minimum 8 characters long)</label></div>
+        <br><div class="individualquestions">Phone number <br><br>(<input type="tel" name="phone" id="phone" required placeholder="123" size="3" maxlength="3" pattern="[0-9]{3}">)
             <input type="tel" name="phone2" id="phone2" required placeholder="456" size="3" maxlength="3" pattern="[0-9]{3}"> -
             <input type="tel" name="phone3" id="phone3" required placeholder="7890" size="4" maxlength="4" pattern="[0-9]{4}"></div>
-        <div class="individualquestions">Date of birth: <input type="date" max="2006-10-21"></div>
-        <div class="individualquestions">Country: <select name="" id="">
+        <br><div class="individualquestions">Date of birth <br><br><input type="date" max="2006-10-21"></div>
+        <br><div class="individualquestions">Country <br><br><select name="country" id="country">
             <option value="brazil">Brazil</option>
             <option value="uk">Uk</option>
             <option value="germany">Germany</option>
@@ -101,41 +149,42 @@
         
         
         </select></div>
-        <div class="individualquestions">Gender: <br>
-            Male:<input type="radio" name="gender" id="Male"> <br>
-            Female: <input type="radio" name="gender" id="Female"><br>
-            Other: <input type="radio" name="gender" id="Other">
+        <br><div><p class="individualquestions">Gender</p>
+            Male<input type="radio" name="gender" id="Male"> <br>
+            Female <input type="radio" name="gender" id="Female"><br>
+            Other <input type="radio" name="gender" id="Other">
 
         </div>
 
-        <div class="individualquestions">
-            Interests: <br>
-            Football: <input type="checkbox" name="interests" id="football"><br>
-            Quidditch: <input type="checkbox" name="interests" id="quidditch"><br>
-            Swimming: <input type="checkbox" name="interests" id="swimming"><br>
-            Hobby Horsing: <input type="checkbox" name="interests" id="hobbyhorsing"><br>
-            Frisbee Golf: <input type="checkbox" name="interests" id="frisbeegolf"><br>
+       <br><br><div>
+            <p class="individualquestions">Interests</p>
+            Football <input type="checkbox" name="interests" id="football"><br>
+            Quidditch <input type="checkbox" name="interests" id="quidditch"><br>
+            Swimming <input type="checkbox" name="interests" id="swimming"><br>
+            Hobby Horsing <input type="checkbox" name="interests" id="hobbyhorsing"><br>
+            Frisbee Golf <input type="checkbox" name="interests" id="frisbeegolf"><br>
         </div>
 
-        <div class="individualquestions">
+        <br><div class="individualquestions">
 
-            Other information that may be useful for us to know: <br>
-            <textarea name="" id=""></textarea>
+            <br>Other information that may be useful for us to know: <br><br>
+            <textarea name="usefultoknow" id="usefultoknow" placeholder="Write here..."></textarea>
         </div>
+        
+        <br><div class="individualquestions">How satisfied are you with our services? <br><br>
+            1<input type="range" name="howsatisfied" id="howsatisfied" min="1" max="10" >10</div>
+            <label for="howsatisfied">1 2 3 4 5 6 7 8 9 10</label>
 
-        <div class="individualquestions">How satisfied are you with our services? <br>
-            <input type="range" name="howsatisfied" id="" min="0" max="10" ></div>
 
-
-            <div class="individualquestions">Upload picture of yourself: <br>
-                <input type="file">
+            <br><div class="individualquestions">Upload a picture of yourself <br>
+                <br><input type="file" style="border: 1px black solid;">
             </div>
+            <input type="reset" name="reset" id="reset" value="Reset">
+            <input type="submit" name="submit" id="submit" value="Submit">
             </div>
     
  
     
-            <input type="reset" name="" id="reset">
-            <input type="submit" id="submite">
         </form>
     </div>
 </div>
