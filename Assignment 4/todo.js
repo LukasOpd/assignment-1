@@ -12,17 +12,19 @@ btn.addEventListener("click", addTask)
 
 function addTask(e){
     console.log(inp.value)
+    if (inp.value != ""){
 
-    newElement = document.createElement("li")
-    newElement.innerHTML = "<input onclick=crossOutTask() type='checkbox'></input>" // Vet ikke åssen jeg kan få boksen foran
-    newElement.innerHTML += inp.value
-    lst.prepend(newElement)
-    tasks.push({
-        text: inp.value,
-        element: newElement,
-    })
-
-    inp.value = ""
+        newElement = document.createElement("li")
+        newElement.innerHTML = "<input onclick=crossOutTask() type='checkbox'></input>" // Vet ikke åssen jeg kan få boksen foran
+        newElement.innerHTML += inp.value
+        lst.prepend(newElement)
+        tasks.push({
+            text: inp.value,
+            element: newElement,
+        })
+    
+        inp.value = ""
+    }
 
 
 
