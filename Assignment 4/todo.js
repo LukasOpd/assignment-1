@@ -15,7 +15,7 @@ function addTask(e){
     if (inp.value != ""){
 
         newElement = document.createElement("li")
-        newElement.innerHTML = "<input onclick=crossOutTask() type='checkbox'></input>" // Vet ikke åssen jeg kan få boksen foran
+        newElement.innerHTML = "<input onclick=crossOutTask() type='checkbox'></input>" 
         newElement.innerHTML += inp.value
         lst.prepend(newElement)
         tasks.push({
